@@ -21,6 +21,8 @@ export abstract class OutgoingMessageParser
 
   abstract getImageBlockParserOut    (storyBlock: StoryBlock, phone: string): any
 
+  abstract getListBlockParserOut    (storyBlock: StoryBlock, phone: string): any
+
   // abstract getAudioBlockParserOut    (storyBlock: StoryBlock, phone: string): Message
 
   // abstract getVideoBlockParserOut    (storyBlock: StoryBlock, phone: string): Message
