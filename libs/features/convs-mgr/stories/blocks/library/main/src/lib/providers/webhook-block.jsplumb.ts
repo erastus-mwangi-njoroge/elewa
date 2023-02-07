@@ -1,7 +1,7 @@
 import { ComponentRef } from '@angular/core';
 import { BrowserJsPlumbInstance } from '@jsplumb/browser-ui';
 
-import { WebhookMessageBlock } from '@app/model/convs-mgr/stories/blocks/messaging';
+import { WebhookBlock } from '@app/model/convs-mgr/stories/blocks/messaging';
 
 import { BlockComponent } from "@app/features/convs-mgr/stories/blocks/library/main";
 
@@ -14,7 +14,7 @@ import { BlockComponent } from "@app/features/convs-mgr/stories/blocks/library/m
  * 
  * @see {_JsPlumbComponentDecorator} - Should be the only one calling the component
  */
-export function _WebhookBlockDecoratePlumb(block: WebhookMessageBlock, comp: ComponentRef<BlockComponent>, jsPlumb: BrowserJsPlumbInstance) : ComponentRef<BlockComponent> 
+export function _WebhookBlockDecoratePlumb(block: WebhookBlock, comp: ComponentRef<BlockComponent>, jsPlumb: BrowserJsPlumbInstance) : ComponentRef<BlockComponent> 
 {
 
   jsPlumb.addEndpoint(comp.location.nativeElement, {
@@ -22,7 +22,8 @@ export function _WebhookBlockDecoratePlumb(block: WebhookMessageBlock, comp: Com
     target: true,
     cssClass:"block_endpoint",
     endpoint: "Rectangle",
-    anchor: "Left"
+    anchor: "Left",
+    maxConnections: -1
   });
 
   return comp;

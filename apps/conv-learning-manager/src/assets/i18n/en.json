@@ -79,7 +79,9 @@
         "LIST": "List",
         "DOCUMENT": "Document",
         "WEBHOOK": "Webhook: HttpRequests",
-        "MULTIPLEINPUT": "Multiple-Input"
+        "MULTIPLEINPUT": "Multiple-Input",
+        "IMAGE-INPUT":"Image Input",
+        "OPEN-ENDED-QUESTION": "Open Emded Question"
       },
       "PLACEHOLDER": {
         "ANCHOR": "Start here",
@@ -94,7 +96,8 @@
         "FILE-NAME": "File name",
         "DOCUMENT-LINK": "Document link",
         "STICKER-LINK": "Sticker link",
-        "WEBHOOK": "https:// "
+        "WEBHOOK": "https:// ",
+        "IMAGE-INPUT": "Image Input"
       },
       "BUTTONS": {
         "JUMP-BLOCK": {

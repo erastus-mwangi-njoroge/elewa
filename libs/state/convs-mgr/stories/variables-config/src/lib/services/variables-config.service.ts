@@ -16,6 +16,4 @@ export class VariablesConfigService {
   getAllVariables(): Observable<Variable[]> {
     return this.variables$.get();
   }
-
-
 }

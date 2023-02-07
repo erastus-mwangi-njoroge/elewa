@@ -3,7 +3,7 @@ import { StoryBlock } from "@app/model/convs-mgr/stories/blocks/main";
 /**
  * Block which sends a message in the form of text.
  */
-export interface LocationInputBlock extends StoryBlock
+export interface OpenEndedQuestionBlock extends StoryBlock
 {
   /** Message to accompany image. */
   message?: string;

@@ -29,6 +29,7 @@ import { OrgStateModule } from '@app/state/organisation';
 import { StoriesStateModule } from '@app/state/convs-mgr/stories';
 import { StoryBlocksStateModule } from '@app/state/convs-mgr/stories/blocks';
 import { StoryBlockConnectionsStateModule } from '@app/state/convs-mgr/stories/block-connections';
+import { VariablesConfigStateModule } from '@app/state/convs-mgr/stories/variables-config';
 
 import  { EnvironmentConfigModule } from '@app/admin/config/environment-config'
 
@@ -37,6 +38,7 @@ import { AppRoutingModule } from './app.routing.module';
 
 import { environment } from '../environments/environment';
 import { VariablesConfigStateModule } from '@app/state/convs-mgr/stories/variables-config';
+
 
 @NgModule({
   declarations: [AppComponent],

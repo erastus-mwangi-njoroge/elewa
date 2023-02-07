@@ -1,10 +1,10 @@
 import { Injectable } from '@angular/core';
 
-import { Repository, DataService } from '@ngfi/angular';
-import { EntityStore } from '@iote/state';
-
 import { of, } from 'rxjs'
 import { tap, map, switchMap, filter } from 'rxjs/operators';
+
+import { Repository, DataService } from '@ngfi/angular';
+import { EntityStore } from '@iote/state';
 
 import { Logger } from '@iote/bricks-angular';
 
