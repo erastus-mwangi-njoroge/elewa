@@ -10,7 +10,7 @@ import { StoryBlock, StoryBlockConnection, VariablesConfig } from '@app/model/co
 import { ActiveStoryStore } from '@app/state/convs-mgr/stories';
 import { StoryBlocksStore } from '@app/state/convs-mgr/stories/blocks';
 import { BlockConnectionsService, StoryConnectionsStore } from '@app/state/convs-mgr/stories/block-connections';
-import { VariablesConfigStore, VariablesConfigService } from '@app/state/convs-mgr/stories/variables-config';
+// import { VariablesConfigStore, VariablesConfigService } from '@app/state/convs-mgr/stories/variables-config';
 
 
 import { StoryEditorState } from '../model/story-editor-state.model';
@@ -98,7 +98,7 @@ export class StoryEditorStateService {
     const newBlocks = blocks.filter(nBl => !oldBlocks.find(oBl => nBl.id === oBl.id));
     // Blocks which were deleted
 
-    const delBlocks = oldBlocks.filter (oBl => (oBl.id !== 'story-end-anchor' && !blocks.find(nBl => nBl.id === oBl.id)));
+    const delBlocks = oldBlocks.filter(oBl => (oBl.id !== 'story-end-anchor' && !blocks.find(nBl => nBl.id === oBl.id)));
     // Blocks which were updated.
     const updBlocks = blocks.filter(nBl => !newBlocks.concat(delBlocks)
       .find(aBl => nBl.id === aBl.id));
@@ -146,7 +146,7 @@ export class StoryEditorStateService {
           id: c.id,
           sourceId: c.sourceId,
           slot: 0,
-          targetId: c.targetId,
+          targetId: c.targetId
         }
       });
   }
