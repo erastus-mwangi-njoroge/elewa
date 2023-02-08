@@ -7,7 +7,7 @@ import { BlockComponent } from '../components/block/block.component';
 
 import { DocumentMessageBlock, EmailMessageBlock, ImageMessageBlock, LocationMessageBlock, 
           NameMessageBlock, ListMessageBlock, PhoneMessageBlock, QuestionMessageBlock, TextMessageBlock, 
-          VideoMessageBlock, VoiceMessageBlock, StickerMessageBlock, ReplyMessageBlock, JumpBlock, MultipleInputMessageBlock,FailBlock, ImageInputBlock, LocationInputBlock, AudioInputBlock, WebhookBlock, OpenEndedQuestionBlock } from '@app/model/convs-mgr/stories/blocks/messaging';
+          VideoMessageBlock, VoiceMessageBlock, StickerMessageBlock, ReplyMessageBlock, JumpBlock, MultipleInputMessageBlock,FailBlock, ImageInputBlock, LocationInputBlock, AudioInputBlock, WebhookBlock, OpenEndedQuestionBlock, WebhookMessageBlock } from '@app/model/convs-mgr/stories/blocks/messaging';
 
 
 import { _MessageBlockDecoratePlumb } from './message-block.jsplumb';
@@ -24,7 +24,6 @@ import { _ListBlockDecoratePlumb } from './list-block.jsplumb';
 import { _DocumentBlockDecoratePlumb } from './document-block.jsplumb';
 import { _ReplyBlockDecoratePlumb } from './reply-block.jsplumb';
 import { _AnchorBlockDecoratePlumb } from './anchor-block.jsplumb';
-import { _WebhookBlockDecoratePlumb } from './webhook-block.jsplumb';
 import { _JumpBlockDecoratePlumb } from './jump-block.jsplumb';
 import { _MultipleBlockDecoratePlumb } from './multiple-block.jsplumb';
 import { _FailBlockDecoratePlumb } from './fail-block.jsplumb';

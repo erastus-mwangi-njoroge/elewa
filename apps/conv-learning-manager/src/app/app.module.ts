@@ -37,8 +37,6 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app.routing.module';
 
 import { environment } from '../environments/environment';
-import { VariablesConfigStateModule } from '@app/state/convs-mgr/stories/variables-config';
-
 
 @NgModule({
   declarations: [AppComponent],

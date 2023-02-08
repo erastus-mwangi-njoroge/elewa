@@ -24,7 +24,6 @@ import { _CreateStickerBlockForm } from '../../model/sticker-block-form.model';
 import { _CreateListBlockMessageForm } from '../../model/list-block-form.model';
 import { _CreateDocumentMessageBlockForm } from '../../model/document-block-form.model';
 import { _CreateReplyBlockForm } from '../../model/reply-block-form.model';
-import { _CreateWebhookMessageBlockForm } from '../../model/webhook-block-form.model';
 import { _CreateMultipleInputMessageBlockForm } from '../../model/multiple-input-message-block-form.model';
 import { _CreateImageInputBlockForm } from '../../model/image-input-block-form.model';
 
@@ -68,7 +67,6 @@ export class BlockComponent implements OnInit {
   listType = StoryBlockTypes.List;
   documentType = StoryBlockTypes.Document;
   replyType = StoryBlockTypes.Reply;
-  webhookType = StoryBlockTypes.Webhook;
   jumpType = StoryBlockTypes.JumpBlock;
   multipleInputType = StoryBlockTypes.MultipleInput;
   failType = StoryBlockTypes.FailBlock;
@@ -165,10 +163,6 @@ export class BlockComponent implements OnInit {
           this.blocksGroup.push(this.blockFormGroup);
           break;
 
-        case StoryBlockTypes.Webhook:
-          this.blockFormGroup = _CreateWebhookMessageBlockForm(this._fb, this.block);
-          this.blocksGroup.push(this.blockFormGroup);
-          break;
 
         case StoryBlockTypes.JumpBlock:
           this.blockFormGroup = _CreateJumpBlockForm(this._fb, this.block);
